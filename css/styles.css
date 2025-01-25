@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* position: absolute; */
+}
+
+.one {
+    position: absolute;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.two {
+
+    background-color: lightyellow;
+    /* animation: rotate 5s linear infinite;  */
+}
+
+
+.animator-rotate {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+
+
+
+
